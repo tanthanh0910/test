@@ -1,0 +1,290 @@
+.class * {
+  font-size: 16px;
+}
+
+.class .table > tbody > tr > td,
+.class .table > thead > tr > th {
+  white-space: nowrap;
+}
+
+.class .table > tbody > tr > td {
+  border-bottom: 1px solid #ddd;
+  vertical-align: baseline;
+}
+
+.class {
+  display: flex;
+  flex-direction: row;
+}
+
+.class__filter {
+  display: flex;
+}
+
+.class .btn-edit {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.class td {
+  padding: 12px 8px !important;
+}
+
+.class__overview {
+  width: 330px;
+  min-width: 300px;
+  padding-left: 40px;
+}
+
+.class__overview .card {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.class__overview .text-title {
+  margin-bottom: 0;
+}
+
+.class__overview--item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem !important;
+  border-bottom: 1px solid #979797;
+}
+.class__overview--item p {
+  margin: 0;
+}
+.class__overview--item:last-child {
+  border: none !important;
+}
+
+#formAddClass .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#formAddClass label {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+div.athlete-select {
+  height: 38px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  z-index: 1;
+}
+
+div.athlete-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-image: url(../icons/icon-select-box.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+div.selected {
+  width: inherit;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+
+div.selected > .text {
+  padding: 8px 24px 8px 16px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+
+li.select-option {
+  border-bottom: 5px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li.select-option .option-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+li.select-option .option-info div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+li.select-option img {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+div.select-box {
+  background: #fff;
+  display: none;
+  width: 100%;
+  z-index: 10029;
+  position: absolute;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+div.select-box.active {
+  display: block;
+}
+
+div.select-box.drop-up {
+  top: auto;
+  bottom: 100%;
+}
+
+ul.select-list {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-height: 300px;
+  overflow: auto;
+}
+
+ul.select-list li {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+}
+
+div.select-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.select-box .athlete-add-btn {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+div.select-box .athlete-add-btn img {
+  width: 23px;
+  height: 23px;
+}
+
+div.search-client .form-control {
+  border-radius: 4px !important;
+}
+
+input.search-athlete-input:focus {
+  border-color: #31b5c6;
+}
+
+.link-buy,
+.link-buy:hover {
+  text-decoration: underline;
+  color: #219653;
+  margin-right: 1.5rem;
+}
+
+.link-account,
+.link-account:hover {
+  text-decoration: underline;
+  color: #696969;
+  margin-right: 1.5rem;
+}
+
+.icon-delete img {
+  width: 16px;
+  height: auto;
+  margin-top: -2px;
+}
+
+.client-mail,
+.client-m {
+  font-size: 15px;
+}
+
+.search-result {
+  font-size: 15px;
+}
+
+.link-class-signin {
+  text-decoration: underline;
+  color: #000;
+}
+
+#inputSearchClient {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.athlete-select .input-clear {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #ccc;
+  cursor: pointer;
+  background: #fff;
+  padding-left: 6px;
+}
+
+.athlete-select .input-clear img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.class-client .checkbox {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+@media (max-width: 1200px) {
+  .class__overview {
+    width: 300px;
+    min-width: 200px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .class {
+    flex-direction: column-reverse;
+  }
+  .class__overview {
+    width: 100%;
+    padding-left: 0px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #formAddClass .form-group {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .add-class-form {
+    align-items: flex-start !important;
+  }
+}

@@ -1,0 +1,69 @@
+.notice-list {
+  padding: 1rem 6rem;
+}
+
+.notice-add {
+  padding: 4rem 6rem 0rem 6rem;
+}
+
+.notice {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.notice__avatar {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.notice__content--info p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.notice__content {
+  padding: 1rem 3.5rem;
+  border-radius: 12px;
+  border: 1px solid #888;
+  font-weight: 500;
+}
+
+textarea.notice__content {
+    padding-top: 26px !important;
+}
+
+.btn-add-notice {
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  min-width: 80px !important;
+}
+#formAddNotice {
+  position: relative;
+}
+
+#formAddNotice .select-group {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#formAddNotice .select-group img {
+    width: 22px;
+    height: auto;
+    object-fit: contain;
+}
+
+#formAddNotice .select-group select {
+    max-width: 130px;
+    border: none;
+    text-overflow: ellipsis;
+}

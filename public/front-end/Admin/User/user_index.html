@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CHWM Outlet and production</title>
+
+    <!-- Bootstrap -->
+    <link href="/public/backend/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/backend/css/app.css" />
+    <link rel="stylesheet" href="/public/backend/css/sidebar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!--Start  Sidebar -->
+    <nav id="mySidebar" class="sidebar scrollbar open-side-bar">
+        <a href="#" class="sidebar__logo">
+            <img src="/public/backend/images/logo-dashboard.svg" alt="" srcset="" />
+            <span>Dashboard</span>
+        </a>
+        <ul class="sidebar__menu">
+            <li class="active"><a href="./user_index.html">User</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div id="main" class="open-side-bar">
+        <button class="btn-toggle-sidebar" id="toggleSideBar">
+            <img src="/public/backend/icons/icon-menu.png" alt="" />
+        </button>
+
+        <!-- Start main content -->
+        <div class="content user-admin">
+            <div class="card flex-1">
+                <!-- Search input and button create new -->
+                <div class="d-flex px-4 pt-4 pb-4 scrollbarX" style="overflow-x: auto">
+                    <div class="form-group has-feedback has-search mr-5">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search admin" style="min-width: 150px" />
+                    </div>
+                    <select class="form-control select-field ml-5" style="width: max-content" id="role" name="role">
+                        <option value="" selected>All roles</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                    </select>
+                    <a href="./create_user.html" class="btn btn-add ml-auto">
+                        <img class="pr-3" style="color: #F78A29;" src="/public/backend/icons/icon-add.svg" alt="" />
+                        Create new
+                    </a>
+                </div>
+
+                <!-- Table admin user -->
+                <div class="scrollbarX" style="overflow-x: auto">
+                    <table class="table table-hover">
+                        <tr>
+                            <th class="text-bold">Full name</th>
+                            <th class="text-bold">Email</th>
+                            <th class="text-bold">Role</th>
+                            <th class="text-bold">Mobile Number</th>
+                            <th class="text-bold">Action</th>
+                        </tr>
+                        <tr>
+                            <td>Jane Tran</td>
+                            <td>giangttk@bk.com</td>
+                            <td>User</td>
+                            <td>98739946</td>
+                            <td>
+                                <div style="white-space: nowrap">
+                                    <a class="link-edit" href="#">Edit</a>
+                                    <a class="link-delete" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jane Tran</td>
+                            <td>giangttk@bk.com</td>
+                            <td>Admin</td>
+                            <td>98739946</td>
+                            <td>
+                                <div>
+                                    <a class="link-edit" href="#">Edit</a>
+                                    <a class="link-delete" href="#">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- End main content -->
+    </div>
+
+    <!--End Sidebar -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/public/backend/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/public/backend/js/custom-js.js"></script>
+</body>
+
+</html>

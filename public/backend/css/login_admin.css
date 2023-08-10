@@ -1,0 +1,7 @@
+body {
+    background-image: url("/backend/images/background_login_admin.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,165 @@
+.appointment .col-appointment:first-child {
+  border-left: 1px solid #555;
+}
+
+.appointment .col-appointment {
+  position: relative;
+  flex: 1;
+  border-right: 1px solid #555;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.appointment .col-appointment-header {
+  text-align: center;
+  border-bottom: 1px solid #888;
+  font-weight: bold;
+  border-top: 1px solid #888;
+}
+
+div.service-select {
+  height: 38px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+div.service-select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-image: url(../icons/icon-select-box.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+div.selected {
+  width: inherit;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+}
+
+div.selected > .text {
+  padding: 8px 24px 8px 16px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+div.selected-option > .text {
+  color: #000 !important;
+}
+
+div.select-box {
+  display: none;
+  width: 100%;
+  z-index: 10029;
+  position: absolute;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  border: 1px solid #000000;
+}
+
+div.select-box.active {
+  display: block;
+}
+
+div.select-box.drop-up {
+  top: auto;
+  bottom: 100%;
+}
+
+ul.select-list,
+ul.select-list-sub {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.select-list-sub {
+  padding-left: 2rem;
+}
+
+ul.select-list li,
+ul.select-list-sub li {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+}
+
+div.select-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.select-list-sub li.active-item {
+  background-color: #2b96e2;
+  color: #fff;
+}
+ul.select-list-sub li:not(.active-item):hover {
+  background-color: #bcdcf3;
+}
+
+.appointment-popup {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+  width: max-content;
+  height: 130px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  display: none;
+}
+
+.appointment-popup .appointment-popup-athlete {
+  background: #23527c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+
+.appointment-popup .appointment-popup-athlete span:first-child {
+  font-weight: bold;
+}
+
+.appointment-popup .appointment-popup-info {
+  padding: 1rem;
+}
+
+.appointment-popup .appointment-popup-info .appointment-popup-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.appointment-popup .appointment-popup-info p:first-child {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.select-time-appointment option {
+  font-weight: 500;
+  color: #000;
+}
+
+.select-time-appointment option:disabled {
+  color: #999;
+}

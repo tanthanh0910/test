@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CHWM Outlet and production</title>
+
+    <!-- Bootstrap -->
+    <link href="/public/backend/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/backend/css/app.css" />
+    <link rel="stylesheet" href="/public/backend/css/auth.css" />
+    <link rel="stylesheet" href="/public/backend/css/login_admin.css" />
+</head>
+
+<body>
+    <!--Start  Sidebar -->
+    <div class="container full-wrapper">
+        <div class="auth h-100">
+            <img class="auth__brands" src="/public/backend/images/logo_login_admin.png" alt="" />
+            <div class="card card-container">
+                <form class="form-auth" onsubmit="" action="./pages/class/class.html">
+                    <div class="form-group">
+                        <label for="emailSignIn">Username</label>
+                        <input type="email" name="email" id="emailSignIn" class="form-control form-custom"
+                            placeholder="Email address" required autofocus />
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordSignIn">Password</label>
+                        <input type="password" name="password" id="passwordSignIn" class="form-control form-custom"
+                            placeholder="Password" required />
+                    </div>
+
+                    <div>
+                        <label>
+                            <a href="#" class="forgot-password"> Forgot the password? </a>
+                        </label>
+                    </div>
+                    <button class="btn btn-master" style="margin-top: 3.5rem;background-color: #F78A29;color: #000000; font-size: 16px;" type="submit">
+                        LOGIN
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--End Sidebar -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/public/backend/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

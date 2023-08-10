@@ -1,0 +1,25 @@
+select {
+    padding: 3px 12px;
+    outline: none;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+select.widthHeight::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+select.style::-webkit-scrollbar-track {
+    border: rgb(180, 180, 180);
+    background-color: #ff6536;
+}
+
+select.style::-webkit-scrollbar-thumb {
+    background-color: #3677ef;
+    border: 1px solid rgb(193, 193, 193);
+}
+
+div {
+    margin-bottom: 5px;
+}

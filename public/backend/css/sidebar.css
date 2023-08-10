@@ -1,0 +1,106 @@
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#mySidebar.open-side-bar {
+  width: 230px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 16px 40px;
+}
+
+.sidebar__logo img {
+  width: 33px;
+  height: 33px;
+}
+
+.sidebar__logo span {
+  font-size: 19px;
+  color: #a4a6b3;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebar__menu {
+  margin-top: 3rem;
+  padding: 0;
+}
+
+/* The sidebar links */
+.sidebar__menu li {
+  margin-top: 8px 0;
+}
+
+.sidebar__menu li a {
+  text-align: start;
+  padding: 14px 12px 14px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #dde2ff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar__menu li.active a {
+  color: #000000;
+  background-color: #F78A29;
+}
+
+/* .sidebar__menu li:not(.active) a:hover {
+  background-color: #c7c7c7;
+  color: #fff;
+} */
+
+.sidebar__menu--submenu {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.sidebar__menu--submenu li a {
+  padding: 12px 12px 12px 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #dde2ff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar__menu li.has-submenu.opened .sidebar__menu--submenu li a:hover {
+  background-color: #F78A29;
+}
+
+.sidebar__menu li.has-submenu.opened,
+.sidebar__menu li.has-active {
+  background: #F78A29;
+}
+
+.sidebar__menu li.has-submenu.opened a,
+.sidebar__menu li.has-active a {
+  color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

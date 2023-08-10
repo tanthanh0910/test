@@ -1,0 +1,71 @@
+#table-job-sheet table {
+    margin-bottom: -4px !important;
+}
+
+#table-job-sheet .content-left {
+    position: sticky;
+    /* margin-top: 3px; */
+    left: 0;
+    z-index: 10;
+    width: 300px;
+    background: #ffffff;
+}
+
+.content-left td {
+    height: 37px;
+}
+
+
+#table-job-sheet .content-right {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    z-index: 9;
+}
+
+#table-job-sheet .header {
+    height: 60px;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+}
+
+#table-job-sheet .header-left {
+    width: 300px;
+    height: 60px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    float: left;
+    left: 0 !important;
+    z-index: 11;
+}
+
+#table-job-sheet .header-right {
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+#table-job-sheet thead tr {
+    height: 60px;
+}
+
+.data-right {
+    min-width: 60px;
+    max-width: 60px;
+    height: 37px;
+    text-align: center;
+}
+
+.td-info {
+    cursor: grab;
+    padding: 8px 2px 2px 2px !important;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.td-info:hover {
+    background-color: #b9b9b9 !important;
+}
